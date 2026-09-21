@@ -68,4 +68,15 @@ n = Number of operations
 
 This notation will tells you the number of operations an algorith will makes 
 
-Page 41
+### Big O establishes a worst-case run time
+
+We can sopose you are searching a name in the phone book. You know that a simple search will take you O(N)
+to run, if you find the name at the fisrt try is the best scenario, but for big O notation ypu will take the worst.
+
+This are 5 big O run times that you'll encounter a lot. Sorted from the fastest to slowest:
+
+* O(log n)Log time,  Example binary search
+* O(n) Linear time, Example, simple search
+* O(n * log n). Example: a fast sorting algorithm, like quicksort 
+* O(n2). Example: a slow sorting algorithm, like selection sort
+* O(n!). Example: a really slow algorithm, like the traveling salesperson
