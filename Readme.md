@@ -80,3 +80,36 @@ This are 5 big O run times that you'll encounter a lot. Sorted from the fastest 
 * O(n * log n). Example: a fast sorting algorithm, like quicksort 
 * O(n2). Example: a slow sorting algorithm, like selection sort
 * O(n!). Example: a really slow algorithm, like the traveling salesperson
+
+### Exercise
+Give the run time for each of these scenarios in terms of big O.
+1.3 You have a name, and you want to find the person’s phone number
+in the phone book.
+
+* R. O(log n)
+
+1.4 You have a phone number, and you want to find the person’s name
+in the phone book. (Hint: You’ll have to search through the whole
+book!)
+
+* R. O(n)
+
+1.5 You want to read the numbers of every person in the phone book.
+* R. O(n)
+
+1.6 You want to read the numbers of just the As. (This is a tricky one!
+It involves concepts that are covered more in chapter 4. Read the
+answer—you may be surprised!)
+
+* R. O(n)
+
+## The traveling salesperson
+
+Here is an examnple of a algorith with a very bad running time. This is a famus in computer science because, its growth is appalling and some very smart people think it can't be improved. It's called the travellin salesperson problem. 
+
+You have a salesperson. This person has to go to five cities. Let's call Pancho, Pancho wants to hit all five cities while traveling the minimum distance. There are many ways to  try to visit each city.
+
+He adds up the local distance and then picks the path with the lowest distance. There are 120 permutations with five cities.
+For six cities will take 720 operations (there are 720 permutations). For seven cities will take 5040 permutations.
+in general is a O(n!) time , or factorial time. Imagine you want to calculate for 100+ cities, the operation is impossible, the sun will collapse first. May be we need to seek for another way, but Does not exist!!
+This is one of the problems in computer science, There is no fast kwown algorithm.  
