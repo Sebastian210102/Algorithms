@@ -113,3 +113,32 @@ He adds up the local distance and then picks the path with the lowest distance. 
 For six cities will take 720 operations (there are 720 permutations). For seven cities will take 5040 permutations.
 in general is a O(n!) time , or factorial time. Imagine you want to calculate for 100+ cities, the operation is impossible, the sun will collapse first. May be we need to seek for another way, but Does not exist!!
 This is one of the problems in computer science, There is no fast kwown algorithm.  
+
+# Chapter 2
+## How your memory works?
+
+Imagine you go to a show and need to check your things. A ches of drawers is available.
+Each drawwer can hold one element. You want to store 2 things so you ask for 2 drawers. 
+Your computer looks like a giant set of drawers, and each drawer has an address.
+
+for example: fe0ffeeb is the address of a slot in memory
+
+## Arrays and Liked lists
+
+Sometimes we need to store a list of elements in memory. Suppose you are doing a app for your do-to, you'll want
+to store the to-do list in memory. 
+
+Should you use an array or a linked list?
+Using an **array** means all your tasked are stored contiguosly (right next to each other) in memory.
+
+Meaby you have a array with 3 items, but the fourth space is bussy for another thing in memory. So if you want to add a 
+new item, you cant add because there already taken up by someone else's stuff. It's like going to a movie with your friends and finding a place to sit but another friend joins you, and there is no place for them. 
+In this case you need to ask your computer for a different chunck of memory that can fit your tasks. Then you need to move all your task there. 
+
+Some times we can asked for a specific number of space in the computer. For example you can asked for 10 spaces, and if you want to add another item you dont need to move your tasks. 
+But what if you don used all these 10 spaces, it is wasted memory.
+And what happend if you want you need more than 10?
+
+Well this problem is fixed by linked lists.
+
+Page - 51
