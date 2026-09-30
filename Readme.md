@@ -141,4 +141,28 @@ And what happend if you want you need more than 10?
 
 Well this problem is fixed by linked lists.
 
-Page - 51
+### Linked list
+
+With linked lists, the items can be anywhere in memory.
+
+Each iteam stores the address of the next item in the list. A bunch of random memory addresses are linked together. 
+Is like a tresure hunt, when you go to the first addresses it says, the next item can be found in the adress 6484.
+Adding an item to a linked list is easy: you stick it anywhere in memory and store the address in the previous item. 
+
+
+We  avoid another problem, We don't need that the date is together, so your computer is not searching a spaces with 1000 slots, like works in arrays, this linked lists split in the memory, so if you have space in memory you can have a linked list. 
+
+
+So what are arrays good for?
+
+### Ararys 
+
+Linked list have a problem, suppose you need to read the last element in a linked list. You cant just read it, because you dont know the address of this item. Instead you have to go  to item 1 to go to item 2 and so on... until get the last item. 
+
+* Linked list are great ig you're going to read all the items one at time, but if you want to going to keep jumping around, is teerible. 
+
+Arrays are different, You know the addres of each item, for example we know that the fisrt position of your array is 00, so what item is in the position 05? Is easy.
+
+* Arrays are great when you want to select or get some random position instantly. 
+
+Page 53
