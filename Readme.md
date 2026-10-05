@@ -165,4 +165,25 @@ Arrays are different, You know the addres of each item, for example we know that
 
 * Arrays are great when you want to select or get some random position instantly. 
 
-Page 53
+### Terminology. 
+
+The elements in an array are numbered, This numbering starts at 0. 
+This position of an element is called index. 
+Here are the run times for common operations on a arrays and lists
+
+         Arrays      Lists
+Reading    O(1)      O(n)
+Insertion  O(n)      O(1)
+
+### Exercise
+Suppose you're bulding an app to keep track of your finances
+1. Groceries
+2. Movie
+3. Memberships 
+
+At the final of the month you need to review and sum the total of your expenses. Should you use a
+linked list or a array?
+R. I will use a linked list becouse the finale of the app is sum all your expenses and you need to insert a new value
+every day. So it is more optimizable use a linked list, and if you want to see something meaby has more time, but the final goal is the sum and the insertion of values.  But if the final goal is that the user can see, and meaby acces to any value from this expenses list, meaby the better option is a array. 
+
+Page 54
