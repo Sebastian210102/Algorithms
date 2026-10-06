@@ -186,4 +186,31 @@ linked list or a array?
 R. I will use a linked list becouse the finale of the app is sum all your expenses and you need to insert a new value
 every day. So it is more optimizable use a linked list, and if you want to see something meaby has more time, but the final goal is the sum and the insertion of values.  But if the final goal is that the user can see, and meaby acces to any value from this expenses list, meaby the better option is a array. 
 
-Page 54
+### Inserting into the middle of a list
+
+Whats is better if you want to insert elements ib the middleÑ arrays or lists?
+With list it's as easy as chagening what the previuos elemnt points to
+But for arrays you have to shift all the rest of elements down. And if there is not space you might have to copy everything in a different location. 
+
+**List are better if you want to insert in the middle**
+
+
+#### Pointers
+We use pointers when we have a linked list and you *point to the next item*. With each item in your linked list, you use a little bit of memory to store address of the next item. This is called **pointer**. 
+
+
+### Deletions 
+
+Again when we want to delte a item is better in linked list, because you only need to change de element you points to. 
+
+#### Run times for Common operations on arrays and linked lists
+
+
+|Operation|Arrays|Linked Lists|
+|---------|-------|------------|
+|Reading|O(1)|O(n)|
+|Insertion|O(n)|O(1)|
+|Deltion|O(n)|O(1)|
+
+
+It's aa common practice to keep track of the first and last items in a linked listm so it would take only O(1) time to delete those

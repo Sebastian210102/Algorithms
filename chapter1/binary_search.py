@@ -8,6 +8,7 @@ def binary_search(arr, item):
     while low <= high:
         mid = (low + high) // 2
         guess = arr[mid]
+        
 
         
         if item == guess:
