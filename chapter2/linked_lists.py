@@ -1,11 +1,11 @@
-# In this script i will do 
 
+# Create a Node
 class Node: 
     def __init__(self, data):
         self.data = data #Actual value 
         self.next = None #Is a pointer to the next value
 
-
+#Main class to create and build the linked list
 class linkedList:
     def __init__(self):
         self.head  = None #The list beggins empty
@@ -19,6 +19,17 @@ class linkedList:
 
         self.tail.next =  new_node
         self.tail = new_node
+
+         
+        #If there are elements we need to go over all the list
+            
+        #This is with a O(n) notation
+        # current = self.head
+        # while current.next is not None: 
+        #     current = current.next
+    
+         # current.next = new_node
+    
     
     def delete(self):
         if self.head == None:
@@ -30,15 +41,7 @@ class linkedList:
 
         
         
-        
-        #If there are elements we need to go over all the list
-        
-        #This is with a O(n) notation
-        # current = self.head
-        # while current.next is not None: 
-        #     current = current.next
-
-        # current.next = new_node
+   
 
 
     def print_list(self):
@@ -67,4 +70,4 @@ l = linkedList()
 l.append(1)
 l.delete()
 l.append(2)
-l.print_list()   # esperado: 2->None, pero imprime None
+l.print_list()   
