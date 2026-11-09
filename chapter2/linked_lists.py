@@ -19,6 +19,14 @@ class linkedList:
 
         self.tail.next =  new_node
         self.tail = new_node
+    
+    def delete(self):
+        if self.head == None:
+            return
+        self.head = self.head.next
+        if self.head == None:
+            self.tail = None
+        
 
         
         
@@ -52,4 +60,11 @@ linked_list.print_list()
 linked_list.append(6)
 linked_list.append(8)
 linked_list.append(10)
+linked_list.delete()
 linked_list.print_list()
+
+l = linkedList()
+l.append(1)
+l.delete()
+l.append(2)
+l.print_list()   # esperado: 2->None, pero imprime None

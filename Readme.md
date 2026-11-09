@@ -213,4 +213,71 @@ Again when we want to delte a item is better in linked list, because you only ne
 |Deltion|O(n)|O(1)|
 
 
-It's aa common practice to keep track of the first and last items in a linked listm so it would take only O(1) time to delete those
+It's aa common practice to keep track of the first and last items in a linked listm so it would take only O(1) time to delete those    
+
+### Wich is used More
+
+Arrays are more used than linked list beacouse they have a lot of advantages over linked list. 
+
+1. They are faster for read and provide random access.
+
+2. They have two types of access random access and secuansial access. 
+
+3. Also in the part of store there is not a big difference becouse in linked list u use memory for each item to storage the next one. 
+
+So Arrays are more used than linked list. 
+
+### Exercises
+
+2.2 Suppose you’re building an app for restaurants to take customer
+orders. Your app needs to store a list of orders. Servers keep adding
+orders to this list, and chefs take orders off the list and make them.
+It’s an order queue: servers add orders to the back of the queue, and
+the chef takes the first order off the queue and cooks it. 
+
+
+R.For this problem is better use a linked list beacouse the insertion and the 'pop' from the las cliente is a O(n) 
+also we can use an array but for this problem the linked list is the chosen one . 
+
+
+
+2.3 Let’s run a thought experiment. Suppose Facebook keeps a list of
+usernames. When someone tries to log in to Facebook, a search is
+done for their username. If their name is in the list of usernames,
+they can log in. People log in to Facebook pretty often, so there are
+a lot of searches through this list of usernames. Suppose Facebook
+uses binary search to search the list. Binary search needs random
+access—you need to be able to get to the middle of the list of
+usernames instantly. Knowin
+
+R.For this problem the better way is an array for the random access. 
+
+2.4People sign up for Facebook pretty often, too. Suppose you decided
+to use an array to store the list of users. What are the downsides
+of an array for inserts? In particular, suppose you’re using binary
+search to search for logins. What happens when you add new users
+to an array? 
+
+R. We need to difine how many storage we need for this array, also the insertion time for an array is
+O(n). Becouse in the worst of the cases we neet to move all our items to inser the new item. 
+
+2.5 In reality, Facebook uses neither an array nor a linked list to store user
+information. Let’s consider a hybrid data structure: an array of linked
+lists. You have an array with 26 slots. Each slot points to a linked list.
+For example, the first slot in the array points to a linked list containing
+all the usernames starting with A. The second slot points to a linked list
+containing all the usernames starting with B, and so on
+
+Suppose Adit B signs up for Facebook, and you want to add them
+to the list. You go to slot 1 in the array, go to the linked list for slot
+1, and add Adit B at the end. Now, suppose you want to search for
+Zakhir H. You go to slot 26, which points to a linked list of all the Z
+names. Then you search through that list to find Zakhir H.
+Compare this hybrid data structure to arrays and linked lists. Is it slower
+or faster than each for searching and inserting? You don’t have to give big
+O run times, just whether the data structure would be faster or slower.
+
+Ithink meaby is the same result or a little better, beacouse you can find faster the slots for each letter. 
+Butr when you neeed ti find the exactly person you need to trought all the list. 
+
+But meeaby if we imagine the worst scenario for each one meaby this alternative is better. 
