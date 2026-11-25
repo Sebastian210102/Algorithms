@@ -281,3 +281,29 @@ Ithink meaby is the same result or a little better, beacouse you can find faster
 Butr when you neeed ti find the exactly person you need to trought all the list. 
 
 But meeaby if we imagine the worst scenario for each one meaby this alternative is better. 
+
+##  Selection Sort
+In this lesson we will lear our second algorithm *selection sort. 
+
+Suppose you have a bunch of music on your computer.For each artist ypu have a play coount]
+
+|Artis|Count|
+|-----|-----|
+|A|67|
+|B|612|
+|C|273|
+|D|1293|
+
+And we want tto sort from most to least played. So we can rank our favorerit artist.
+
+One way is to go to the list and find the most played artist. And add the artist to the new list
+And do it again for the next. In terms of big O this will take a run time for O(n^2)
+
+### Example of a code listing on the file 
+
+this code will show you a similar example for music sort. Sort an a array from smallest to largest. Lest writ a function to find the smallest element in an array. 
+
+
+chapter2/code_listing_exercise.py
+
+page 67
