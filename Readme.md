@@ -306,4 +306,40 @@ this code will show you a similar example for music sort. Sort an a array from s
 
 chapter2/code_listing_exercise.py
 
-page 67
+# Chapter 3
+
+In this chapter we will cover recursion, this is a elegant way tto solve problems.  
+
+## Recursion
+We can imagine we have a box, and into the box there are more boxes, You need still searching until yopu find the key. So we can do something like that.
+
+1. Look through the box
+2. If youu find a box, go to step 1
+3. If you find a key, you're done!
+
+
+This is an example with while loop
+
+def look_for_key(main_box):
+    pile = main_box.make_a_pile_to_look_through()
+     while pile is not empty:
+        box = pile.grab_a_box()
+        for item in box:
+            if item.is_a_box():
+                pile.append(item)
+            elif item.is_a_key():
+                print("found the key!")
+
+The second way uses recursion. Recursion is where a function calls itself.
+Here’s the second way in pseudocode:
+
+
+def look_for_key(box):
+    for item in box:
+         if item.is_a_box():
+            look_for_key(item) 
+        elif item.is_a_key():
+            print("found the key!")
+
+
+Page 72
