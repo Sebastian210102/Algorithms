@@ -342,4 +342,15 @@ def look_for_key(box):
             print("found the key!")
 
 
-Page 72
+## The Stack
+
+The call stack is an important concept in general programming. 
+
+Imagine you need to program a to do list. You need to writte a notes in a stack of sticky notes is much simpler. When we insert an item, it gets added to the top of the list. When you read an item, you only read the topmost item, and it's taken off the list. So the todo-list has only two actions. Push(insert) and pop (remove and read)
+
+When we call a function into another function the main function starts, and call the child functios, and the main functioin is partial finished, so the computer save into memory de value for the main function and continues with the child function, one the child funtion finish and the main function continue. 
+
+
+The advantage of staks is you can save the information of all the "oppend" but the cost: save all the info is take up a lot of memory.
+
+page 75
